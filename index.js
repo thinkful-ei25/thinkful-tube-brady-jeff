@@ -3,6 +3,14 @@
 
 function talkToYoutube(searchTerm, callback) {
     //collects data from Youtube API and passes it forward to handleFormSubmit
+    const query = {
+        part: 'snippet',
+        key: 'AIzaSyBOZ_IKeZUJBN2TbZbuWNWul8_yrO_WiFM',
+        q: searchTerm
+    }
+
+    $.getJSON("https://www.googleapis.com/youtube/v3/search", query, callback);
+
 
 }
 
@@ -11,14 +19,15 @@ function resultsTemplate(){
     //create an individual listing for each result that matches the query.
 }
 
-function render() {
+function render(data) {
     //this would input our search results into the results div
     //calls the resultsTemplate() and then maps all of the individual results into a single output
-
-}
-
-function talkToYoutube(searchTerm, callback) {
-    //collects data from Youtube API and passes it forward to handleFormSubmit
+    try {
+        console.log(data);
+    }
+    catch {
+        console.error('Did not work');
+    }
 
 }
 
