@@ -2,11 +2,15 @@ User loads page and sees search bar ----- DONE
 
 User uses search bar by typing in input -----DONE
 
-Have button with type="submit" that .on("click") it access YouTube data API
+Have button with type="submit" that .on("click") ------ DONE
+
+Search bar resets so .val('')
+
+it access YouTube data API
 
 After submit, the user sees their page with the relevant display thumbnail images of the videos that match their search
 
-Search bar resets so .val('')
+
 
 Headline of search matches
 
